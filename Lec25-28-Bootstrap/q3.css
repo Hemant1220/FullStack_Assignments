@@ -1,0 +1,4 @@
+body { background: #fcfcfd; }
+.product-card { overflow: hidden; border: 1px solid #ececf0; border-radius: 1rem; transition: transform .22s ease, box-shadow .22s ease; }
+.product-card:hover { transform: translateY(-6px); box-shadow: 0 1rem 2rem #1212251a !important; }
+.product-card .card-img-top { height: 180px; object-fit: cover; }
