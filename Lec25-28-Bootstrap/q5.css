@@ -1,0 +1,12 @@
+/* Bootstrap CSS variables are overridden to create a consistent custom theme. */
+:root { --bs-primary: #7c4d35; --bs-primary-rgb: 124, 77, 53; --bs-font-sans-serif: 'DM Sans', sans-serif; }
+body { font-family: 'DM Sans', sans-serif; background: #fffaf5; color: #30251f; }
+h1, h2, .brand { font-family: 'Playfair Display', serif; }
+.brand { color: #30251f; text-decoration: none; font-weight: 700; }
+.blog-header, .blog-footer { background: #f0e3d6; }
+.intro { max-width: 760px; }
+.intro p:first-child { color: #7c4d35; letter-spacing: .12em; }
+.post-card { border: 1px solid #eadbcd; border-radius: 1rem; overflow: hidden; transition: transform .2s, box-shadow .2s; }
+.post-card:hover { transform: translateY(-4px); box-shadow: 0 1rem 2rem #30251f16; }
+.post-card .card-img-top { height: 230px; object-fit: cover; }
+.read-link { color: #7c4d35; font-weight: 700; text-decoration: none; }
