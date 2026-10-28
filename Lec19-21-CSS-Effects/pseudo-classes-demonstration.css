@@ -1,0 +1,12 @@
+/* Base styles create a calm, readable page. */
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 Arial,sans-serif;background:#f4f7fb;color:#1f3045}header{text-align:center;padding:3rem 1.2rem 2rem}header .eyebrow{color:#3d69c7;font-weight:800;letter-spacing:.16em;font-size:.8rem}h1{font-size:clamp(2rem,4vw,3.2rem);margin:.4rem 0}header>p:last-child,footer{color:#66758a}
+.examples{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;max-width:1100px;margin:0 auto;padding:1rem 1.5rem 3rem}.demo{flex:1 1 220px;max-width:260px;padding:1.3rem;background:white;border:1px solid #dfe6f0;border-radius:14px;box-shadow:0 8px 22px #2137550b}.demo h2{font-size:1.15rem;margin-top:0;color:#344fa3}
+/* :hover changes link color and decoration on pointer hover. */
+.sample-link{color:#315fbb;font-weight:700;text-decoration:none}.sample-link:hover{color:#d4513a;text-decoration:underline}
+/* :focus is an accessible visible indicator for keyboard and pointer users. */
+input{width:100%;margin-top:.4rem;padding:.7rem;border:1px solid #bbc7d8;border-radius:7px;font:inherit}input:focus{outline:3px solid #9bbcff;border-color:#315fbb}
+/* :active gives immediate feedback while the button is pressed. */
+button{padding:.7rem 1rem;border:0;border-radius:8px;background:#315fbb;color:white;font:inherit;cursor:pointer;transition:transform .12s,background .12s}.active-button:active{transform:scale(.95);background:#203e83}
+/* :nth-child(2n) targets every even list item. */
+.numbered{padding-left:1.25rem}.numbered li{padding:.35rem .5rem;border-radius:5px}.numbered li:nth-child(even){background:#eaf0ff}
+.demo p{font-size:.92rem;color:#657287}footer{text-align:center;padding:1.5rem}
