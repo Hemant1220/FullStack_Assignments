@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Web Architecture Flow</title><link rel="stylesheet" href="web-architecture-flow.css"></head>
+<body><header><p class="eyebrow">ASSIGNMENT 1 · Q10</p><h1>Basic web architecture</h1><p>A labeled diagram showing the client, server, API, and database, plus how requests and responses move between them.</p></header>
+<main><section class="diagram-card"><div class="architecture">
+<article class="component client"><span class="component-label">01 · CLIENT</span><h2>Browser / UI</h2><p>Displays the page and gathers user input.</p><small>Sends HTTP request</small></article>
+<div class="connector request"><span>HTTP request</span><b>→</b></div>
+<article class="component api"><span class="component-label">02 · API</span><h2>API endpoint</h2><p>Defines how the client requests data or actions from the application.</p><small>e.g. GET /api/products</small></article>
+<div class="connector request"><span>Validated request</span><b>→</b></div>
+<article class="component server"><span class="component-label">03 · SERVER</span><h2>Backend service</h2><p>Runs business logic, validates input, checks permissions, and prepares a response.</p><small>Queries database if needed</small></article>
+<div class="connector database-link"><span>Query / update</span><b>↕</b></div>
+<article class="component database"><span class="component-label">04 · DATABASE</span><h2>Data store</h2><p>Stores and retrieves records such as users, products, and orders.</p><small>Returns query results</small></article>
+</div>
+<div class="return-path"><span>Response travels back through the backend/API</span><b>Database → Server → API → Client</b></div></section>
+<section class="explanation"><h2>What each component does</h2><div class="explanation-grid"><article><h3>Client</h3><p>The browser or app where a person interacts with the product.</p></article><article><h3>API</h3><p>A defined interface and set of endpoints used by software components to communicate.</p></article><article><h3>Server</h3><p>Processes incoming requests and applies application rules.</p></article><article><h3>Database</h3><p>Persists information so it can be queried and changed later.</p></article></div><p class="example"><strong>Example:</strong> A shopping page requests product information from an API. The backend may query the product database, format the results as JSON, and return them. The client then displays the products.</p></section></main><footer>Architecture varies by application; an API is an interface and does not have to be a separate physical server.</footer></body></html>
