@@ -1,0 +1,4 @@
+.portfolio-header { background: #e9eaff; }
+.profile-photo { width: 145px; height: 145px; object-fit: cover; border: 5px solid #fff; box-shadow: 0 8px 25px #1d1b4b20; }
+.btn-primary { --bs-btn-bg: #5547cc; --bs-btn-border-color: #5547cc; }
+.card { border-radius: 1rem; }
