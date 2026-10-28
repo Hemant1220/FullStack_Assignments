@@ -1,0 +1,10 @@
+/* Custom styling layered over Bootstrap's responsive grid and utilities. */
+:root { --brand: #5b4bdb; }
+body { color: #182033; }
+.site-header { background: #171b35; }
+.hero { background: linear-gradient(135deg, #f7f6ff, #fff); }
+.eyebrow { color: var(--brand); font-size: .78rem; font-weight: 800; letter-spacing: .14em; }
+.btn-primary { --bs-btn-bg: var(--brand); --bs-btn-border-color: var(--brand); --bs-btn-hover-bg: #4435bd; }
+.hero-image { min-height: 300px; max-height: 430px; width: 100%; object-fit: cover; box-shadow: 0 1.25rem 3rem #22223b20; }
+.service-card { border: 1px solid #eeedf7; transition: transform .2s ease, box-shadow .2s ease; }
+.service-card:hover { transform: translateY(-5px); box-shadow: 0 1rem 2rem #171b3512; }
