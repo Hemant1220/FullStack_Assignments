@@ -1,0 +1,4 @@
+.article-image { height: 220px; object-fit: cover; }
+.card { border-radius: 1rem; overflow: hidden; }
+.page-link { color: #5547cc; }
+.page-item.active .page-link { background: #5547cc; border-color: #5547cc; }
