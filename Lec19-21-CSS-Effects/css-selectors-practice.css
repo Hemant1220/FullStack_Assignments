@@ -1,0 +1,22 @@
+/* Element selector: provide consistent defaults for page text. */
+*{box-sizing:border-box}body{margin:0;font:16px/1.65 Arial,sans-serif;background:#f7f8fc;color:#233247}header{text-align:center;padding:3rem 1rem 2rem}header .eyebrow{color:#7052b5;font-size:.8rem;font-weight:800;letter-spacing:.16em}h1{font-size:clamp(2rem,4vw,3.2rem);margin:.4rem 0}header>p:last-child,footer{color:#68768a}.workshop{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;max-width:1050px;margin:auto;padding:1rem 1.5rem 3rem}.example{padding:1.3rem;background:white;border:1px solid #e2e6ef;border-radius:12px}.example h2{font-size:1.1rem;color:#5b469c;margin-top:0}
+/* Element selectors can style all paragraphs within a named section. */
+.element-example p{color:#566982}
+/* Class selector: reusable styling can apply to many elements. */
+.highlight{padding:.75rem;background:#fff1c8;border-left:4px solid #e3a72f;border-radius:5px}
+/* ID selector: targets the one element with this specific ID. */
+#unique-note{color:#087b72;font-weight:700}
+/* Attribute selector: target links with target="_blank". */
+a[target="_blank"]{color:#6a48b2;font-weight:700;text-decoration-thickness:2px}
+/* Attribute selector targets email inputs specifically. */
+input[type="email"]{width:100%;padding:.65rem;border:1px solid #bbc6d7;border-radius:7px;font:inherit}
+/* Descendant combinator: any p inside .parent. */
+.parent p{background:#eef3ff;padding:.55rem;border-radius:6px}
+/* Child combinator: only direct p children of .parent, not nested ones. */
+.parent>p{border-left:4px solid #5772cf}
+/* Adjacent sibling combinator: the first p immediately after h2. */
+.relation h2+p{outline:2px solid #e9b85a;outline-offset:2px}
+/* General sibling combinator: every matching p after h2 in the same parent. */
+.relation h2~p{padding:.35rem;color:#8e4a38}
+footer{text-align:center;padding:1.5rem}
+@media(max-width:650px){.workshop{grid-template-columns:1fr}}
