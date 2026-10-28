@@ -1,0 +1,20 @@
+/* Global and element selectors set consistent base behavior. */
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 Arial,sans-serif;background:#f5f7fb;color:#23334a}header{text-align:center;padding:3rem 1rem 2rem}header .eyebrow{color:#346d9f;font-size:.8rem;font-weight:800;letter-spacing:.17em}h1{font-size:clamp(2rem,4vw,3.2rem);margin:.4rem 0}header>p:last-child,footer{color:#6a788b}.selector-layout{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;max-width:1050px;margin:auto;padding:1rem 1.5rem 3rem}.panel{min-width:0;padding:1.4rem;background:white;border:1px solid #e0e7ef;border-radius:13px}.panel h2{font-size:1.15rem;margin-top:0}.panel label{display:block;font-weight:700;margin:.65rem 0 .3rem}.panel code{font-size:.8rem;color:#3567a1;background:#edf4fb;padding:.15rem .3rem;border-radius:4px}
+/* Attribute selectors target controls by their HTML attributes. */
+input[type="text"]{border:2px solid #8cafd1}input[type="email"]{border:2px dashed #6ca99d}
+/* Focus pseudo-class adds a clearly visible keyboard/pointer state. */
+input:focus{outline:3px solid #f3bb60;outline-offset:2px;border-color:#3567a1}
+/* Attribute prefix selector matches a link whose href begins with https. */
+a[href^="https"]{color:#176d83;font-weight:700;text-decoration-thickness:2px}a:hover{color:#d25c3e}
+input{width:100%;padding:.7rem;border-radius:7px;font:inherit}ul.feature-list{padding-left:1.2rem}.feature-list li{padding:.45rem .6rem;border-radius:6px}.feature-list li:nth-child(2){background:#e7f0ff;color:#244f8a;font-weight:700}
+/* Descendant combinator: all paragraphs in .parent are styled. */
+.parent p{padding:.5rem;background:#edf7f4;border-radius:6px}
+/* Child combinator: only the immediate paragraph child of .parent. */
+.parent>p{border-left:4px solid #3f9a84}
+/* Adjacent sibling combinator: the p immediately after the heading. */
+.combinator-demo h2+p{outline:2px solid #efbd62;outline-offset:2px}
+/* General sibling combinator: all paragraph siblings after the heading. */
+.combinator-demo h2~p{color:#8f4f3d}
+/* Pseudo-elements add decorative content without extra HTML. */
+.panel h2::before{content:"✦ ";color:#7398c5}.panel h2::after{content:"";display:block;width:44px;height:3px;margin-top:.35rem;background:#b4d0e8;border-radius:99px}
+footer{text-align:center;padding:1.5rem}@media(max-width:650px){.selector-layout{grid-template-columns:1fr}}
