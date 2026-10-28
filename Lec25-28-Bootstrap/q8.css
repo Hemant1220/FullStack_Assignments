@@ -1,0 +1,5 @@
+.pricing-page { background: #f7f8fc; color: #1f2940; }
+.pricing-card { border: 1px solid #e7eaf2; border-radius: 1.2rem; transition: transform .2s ease, box-shadow .2s ease; }
+.pricing-card:hover { transform: translateY(-7px); box-shadow: 0 1.25rem 2.5rem #20294a20 !important; }
+.featured { background: var(--bs-primary); color: #fff; border-color: var(--bs-primary); }
+.feature-list li { padding: .5rem 0; }
