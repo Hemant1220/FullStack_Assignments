@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Dashboard Layout</title>
+    <link rel="stylesheet" href="grid-dashboard-layout.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="dashboard-header">
+            <a class="brand" href="#overview">FOCUS<span>BOARD</span></a>
+            <p>Workspace dashboard</p>
+            <span class="avatar" aria-label="Profile initial">H</span>
+        </header>
+
+        <aside class="sidebar">
+            <p class="sidebar-label">MENU</p>
+            <nav aria-label="Dashboard navigation">
+                <a class="active" href="#overview">Overview</a>
+                <a href="#projects">Projects</a>
+                <a href="#activity">Activity</a>
+                <a href="#reports">Reports</a>
+                <a href="#settings">Settings</a>
+            </nav>
+        </aside>
+
+        <main class="main-content" id="overview">
+            <section class="welcome">
+                <p class="eyebrow">YOUR WORKSPACE</p>
+                <h1>Overview</h1>
+                <p>A quick snapshot of recent progress and priorities.</p>
+            </section>
+
+            <section class="widget-grid" aria-label="Dashboard widgets">
+                <article class="widget widget-wide" id="projects">
+                    <span class="widget-label">PROJECTS</span>
+                    <h2>Project progress</h2>
+                    <p>Three active projects are moving through planning, design, and implementation.</p>
+                    <div class="progress-bar"><span></span></div>
+                    <small>68% average completion · sample data</small>
+                </article>
+                <article class="widget" id="activity">
+                    <span class="widget-label">ACTIVITY</span>
+                    <h2>18 tasks</h2>
+                    <p>Completed this week</p>
+                </article>
+                <article class="widget" id="reports">
+                    <span class="widget-label">REPORTS</span>
+                    <h2>4 reviews</h2>
+                    <p>Ready for your review</p>
+                </article>
+                <article class="widget" id="settings">
+                    <span class="widget-label">NEXT STEP</span>
+                    <h2>Keep momentum</h2>
+                    <p>Choose one clear task and make steady progress.</p>
+                </article>
+            </section>
+        </main>
+    </div>
+    <footer>&copy; 2026 Focusboard · Grid dashboard exercise</footer>
+</body>
+</html>
