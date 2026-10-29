@@ -30,7 +30,7 @@
     const editor=document.createElement('input'); editor.className='inline-edit'; editor.setAttribute('aria-label','Edit product name'); editor.value=label.textContent;
     label.insertAdjacentElement('afterend',editor);
     li.querySelector('[data-action="edit"]').textContent='Save';
-    editor.addEventListener('blur',()=>saveEdit(li),{once:true});
+    editor.addEventListener('focusout',(event)=>{if(!li.contains(event.relatedTarget)) saveEdit(li);});
     editor.addEventListener('keydown',(event)=>{if(event.key==='Enter'){event.preventDefault();saveEdit(li);} if(event.key==='Escape') saveEdit(li);});
     editor.focus(); editor.select();
   }
