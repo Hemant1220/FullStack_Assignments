@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Dashboard</title>
+    <link rel="stylesheet" href="responsive-dashboard-layout.css">
+</head>
+<body>
+    <!-- Fixed header remains at the top of the viewport. -->
+    <header class="topbar">
+        <a class="brand" href="#overview">FOCUS<span>BOARD</span></a>
+        <p>Workspace overview</p>
+        <a class="profile-link" href="#profile" aria-label="Profile section">H</a>
+    </header>
+
+    <div class="dashboard">
+        <aside class="sidebar">
+            <p class="sidebar-label">WORKSPACE</p>
+            <nav aria-label="Dashboard navigation">
+                <a class="active" href="#overview">Overview</a>
+                <a href="#projects">Projects</a>
+                <a href="#tasks">My Tasks</a>
+                <a href="#reports">Reports</a>
+                <a href="#settings">Settings</a>
+            </nav>
+            <div class="sidebar-note" id="profile">
+                <strong>Good work starts small.</strong>
+                <p>Choose one priority and make steady progress.</p>
+            </div>
+        </aside>
+
+        <main class="main-content" id="overview">
+            <section class="welcome">
+                <p class="eyebrow">THURSDAY · WORKSPACE SNAPSHOT</p>
+                <h1>Good afternoon, Hemant</h1>
+                <p>Here is a quick look at what is moving forward today.</p>
+            </section>
+
+            <section class="metric-grid" aria-label="Workspace summary">
+                <article class="metric"><p>Active projects</p><h2>04</h2><span>Across your workspace</span></article>
+                <article class="metric"><p>Tasks completed</p><h2>18</h2><span>This week's progress</span></article>
+                <article class="metric"><p>Upcoming deadline</p><h2>03</h2><span>Days remaining</span></article>
+            </section>
+
+            <section class="content-grid">
+                <article class="content-box" id="projects">
+                    <div class="box-heading"><h2>Recent projects</h2><a href="#projects">View all</a></div>
+                    <ul class="project-list">
+                        <li><span class="project-dot blue"></span><div><strong>Portfolio Website</strong><small>Design and implementation</small></div><span class="status">In progress</span></li>
+                        <li><span class="project-dot green"></span><div><strong>Student Dashboard</strong><small>Structure and components</small></div><span class="status complete">On track</span></li>
+                        <li><span class="project-dot orange"></span><div><strong>Data Practice</strong><small>Exploration and notes</small></div><span class="status">Planning</span></li>
+                    </ul>
+                </article>
+                <article class="content-box" id="tasks">
+                    <div class="box-heading"><h2>Today's focus</h2><a href="#tasks">All tasks</a></div>
+                    <ul class="tasks">
+                        <li><span class="checkmark">✓</span><span>Review HTML semantics</span></li>
+                        <li><span class="empty-check"></span><span>Finish responsive CSS layout</span></li>
+                        <li><span class="empty-check"></span><span>Test pages on mobile width</span></li>
+                    </ul>
+                </article>
+                <article class="content-box report" id="reports">
+                    <h2>Weekly momentum</h2>
+                    <p>Keep your progress visible and make time for a short review at the end of the week.</p>
+                    <div class="progress-track"><span></span></div>
+                    <small>72% of weekly learning goals logged (sample data)</small>
+                </article>
+                <article class="content-box report" id="settings">
+                    <h2>Workspace tip</h2>
+                    <p>Break large tasks into small steps. A clear next action makes it easier to begin.</p>
+                    <a href="#overview">Back to overview ↑</a>
+                </article>
+            </section>
+            <footer>&copy; 2026 Focusboard · Dashboard layout exercise</footer>
+        </main>
+    </div>
+</body>
+</html>
