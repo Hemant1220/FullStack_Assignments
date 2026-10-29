@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Card Flip Animation</title>
+    <link rel="stylesheet" href="css-card-flip-animation.css">
+</head>
+<body>
+    <main class="flip-page">
+        <header class="page-header">
+            <p class="eyebrow">CSS TRANSFORMATIONS</p>
+            <h1>A story in two sides</h1>
+            <p>Hover over the card or focus it with the keyboard to flip it and reveal more information.</p>
+        </header>
+
+        <section class="flip-stage" aria-label="Interactive flip card">
+            <div class="flip-card" tabindex="0" aria-label="Flip card about Kyoto, Japan">
+                <div class="flip-inner">
+                    <article class="flip-face flip-front">
+                        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Traditional street and architecture in Kyoto">
+                        <div class="front-copy">
+                            <span>TRAVEL NOTE · 01</span>
+                            <h2>Discover Kyoto</h2>
+                            <p>Hover to turn the page ↗</p>
+                        </div>
+                    </article>
+
+                    <article class="flip-face flip-back">
+                        <p class="eyebrow">BEHIND THE IMAGE</p>
+                        <h2>A slower kind of journey</h2>
+                        <p>Kyoto blends historic temples, quiet gardens, traditional streets, and modern city life. Take time to explore beyond the busiest routes and notice the small details.</p>
+                        <p class="back-tip"><strong>Travel tip:</strong> Be respectful in residential lanes and check opening hours before visiting temples.</p>
+                        <a href="https://www.japan.travel/en/destinations/kansai/kyoto/">Explore Kyoto travel information</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <p class="hint">The card uses a 3D transform and a smooth transition — no JavaScript is needed.</p>
+    </main>
+</body>
+</html>
