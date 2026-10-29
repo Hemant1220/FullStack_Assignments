@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldnotes — Responsive Blog</title>
+    <link rel="stylesheet" href="responsive-blog-grid-areas.css">
+</head>
+<body>
+    <div class="blog-layout">
+        <header class="blog-header">
+            <a class="brand" href="#home">FIELDNOTES<span>.</span></a>
+            <p>Ideas for curious minds</p>
+            <nav aria-label="Blog navigation"><a href="#home">Home</a><a href="#posts">Blogs</a><a href="#about">About</a></nav>
+        </header>
+
+        <main class="blog-main" id="home">
+            <section class="welcome">
+                <p class="eyebrow">LATEST STORIES</p>
+                <h1>Make space for discovery.</h1>
+                <p>Short reads on learning, creativity, and the everyday practices that help ideas grow.</p>
+            </section>
+            <section class="post-grid" id="posts" aria-label="Blog posts">
+                <article class="post-card">
+                    <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Notebook and pen on a desk">
+                    <p class="category">LEARNING</p>
+                    <h2>Small habits, lasting skills</h2>
+                    <p>Progress often comes from repeated practice. A small, focused session can be more useful than waiting for a perfect block of time.</p>
+                    <a href="#about">Read story →</a>
+                </article>
+                <article class="post-card">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Bright creative workspace">
+                    <p class="category">CREATIVITY</p>
+                    <h2>Designing a better workspace</h2>
+                    <p>Thoughtful organization makes it easier to begin, stay focused, and return to a project with a clear next step.</p>
+                    <a href="#about">Read story →</a>
+                </article>
+            </section>
+        </main>
+
+        <aside class="blog-sidebar" id="about">
+            <h2>Explore topics</h2>
+            <ul><li><a href="#posts">Learning &amp; study</a></li><li><a href="#posts">Design thinking</a></li><li><a href="#posts">Web development</a></li><li><a href="#posts">Productivity</a></li><li><a href="#posts">Creative practice</a></li></ul>
+            <section class="sidebar-note"><h3>Weekly note</h3><p>A short idea to help you keep learning and creating with intention.</p><a href="mailto:hello@fieldnotes.example">Get in touch</a></section>
+        </aside>
+
+        <footer class="blog-footer">Contact: <a href="mailto:hello@fieldnotes.example">hello@fieldnotes.example</a> · &copy; 2026 Fieldnotes</footer>
+    </div>
+</body>
+</html>
