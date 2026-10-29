@@ -1,0 +1,15 @@
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font:16px/1.65 Arial,sans-serif;color:#263849;background:linear-gradient(135deg,#eef3ff,#f8efe6)}
+.flip-page{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2.5rem 1.2rem}
+.page-header{text-align:center;max-width:730px;margin-bottom:1.5rem}.eyebrow{color:#526bb6;font-size:.75rem;font-weight:900;letter-spacing:.18em}.page-header h1{font-size:clamp(2.2rem,5vw,3.5rem);line-height:1.1;margin:.5rem 0}.page-header>p:last-child{color:#68788b}
+.flip-stage{display:flex;align-items:center;justify-content:center;perspective:1000px;width:100%;padding:1rem}
+.flip-card{width:min(100%,390px);height:490px;outline:none;perspective:1000px;cursor:pointer}
+.flip-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .8s cubic-bezier(.2,.7,.2,1);box-shadow:0 22px 48px rgba(26,50,76,.18);border-radius:18px}
+.flip-card:hover .flip-inner,.flip-card:focus .flip-inner{transform:rotateY(180deg)}
+.flip-face{position:absolute;inset:0;overflow:hidden;border-radius:18px;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.flip-front{background:#fff;color:#fff}.flip-front img{display:block;width:100%;height:100%;object-fit:cover}.flip-front:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(8,26,30,.85))}
+.front-copy{position:absolute;z-index:1;left:1.5rem;right:1.5rem;bottom:1.7rem}.front-copy span{font-size:.7rem;font-weight:900;letter-spacing:.15em;color:#d9e5ef}.front-copy h2{font-size:2rem;line-height:1.1;margin:.5rem 0}.front-copy p{margin:0;color:#e2eaf1}
+.flip-back{transform:rotateY(180deg);display:flex;flex-direction:column;justify-content:center;padding:2rem;background:#234637;color:#fff;border:5px solid rgba(255,255,255,.7)}.flip-back .eyebrow{color:#bdddbd}.flip-back h2{font-size:1.85rem;line-height:1.15;margin:.7rem 0}.flip-back>p:not(.eyebrow){color:#e0eee3}.back-tip{padding:.8rem;background:rgba(255,255,255,.1);border-radius:8px;font-size:.9rem}.flip-back a{align-self:flex-start;color:#fff;font-weight:800;text-decoration-thickness:1px;text-underline-offset:4px}.flip-back a:hover{color:#f0d29a}.flip-card:focus-visible{outline:3px solid #d2914e;outline-offset:6px;border-radius:20px}
+.hint{text-align:center;color:#738295;font-size:.85rem;margin:1rem 0 0}
+@media(max-width:430px){.flip-card{height:460px}.flip-back{padding:1.35rem}.flip-back h2{font-size:1.6rem}.front-copy h2{font-size:1.7rem}}
+@media(prefers-reduced-motion:reduce){.flip-inner{transition:none}}
