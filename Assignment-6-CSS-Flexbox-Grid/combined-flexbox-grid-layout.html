@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldnotes — Flexbox and Grid Layout</title>
+    <link rel="stylesheet" href="combined-flexbox-grid-layout.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="#home">FIELDNOTES<span>.</span></a>
+        <nav aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#article">Article</a>
+            <a href="#resources">Resources</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="page-grid" id="home">
+        <article class="main-article" id="article">
+            <p class="eyebrow">DESIGN · LEARNING · IDEAS</p>
+            <h1 class="animated-title">Make room for better ideas.</h1>
+            <p class="lead">A useful digital experience begins with a clear purpose, thoughtful structure, and enough space for the important things to stand out.</p>
+            <p>Flexbox and Grid are complementary CSS layout tools. Flexbox is useful for arranging items along one axis, while Grid makes it easier to structure rows and columns together. Using the right tool for each part of a page can make a layout easier to maintain.</p>
+
+            <section class="feature-row" aria-label="Three layout principles">
+                <article class="feature-box">
+                    <span>01</span>
+                    <h2>Structure</h2>
+                    <p>Organize content into meaningful sections.</p>
+                </article>
+                <article class="feature-box">
+                    <span>02</span>
+                    <h2>Balance</h2>
+                    <p>Give each element a clear role and space.</p>
+                </article>
+                <article class="feature-box">
+                    <span>03</span>
+                    <h2>Adapt</h2>
+                    <p>Make the experience comfortable on any screen.</p>
+                </article>
+            </section>
+
+            <h2>Build from the content outward</h2>
+            <p>Begin by deciding what readers need to know. Use semantic HTML to represent the structure, then apply CSS Grid to divide the page into major regions and Flexbox to align related elements inside those regions.</p>
+            <p>Finally, test the page at narrower widths. A responsive layout should preserve meaning and reading order rather than simply shrink everything down.</p>
+        </article>
+
+        <aside class="sidebar" id="resources">
+            <section class="sidebar-card">
+                <p class="eyebrow">QUICK NOTES</p>
+                <h2>Layout toolkit</h2>
+                <ul>
+                    <li><strong>Grid:</strong> page regions and two-dimensional layouts.</li>
+                    <li><strong>Flexbox:</strong> navigation bars and rows of components.</li>
+                    <li><strong>Media queries:</strong> responsive changes at breakpoints.</li>
+                </ul>
+            </section>
+            <section class="sidebar-card">
+                <h2>Helpful resource</h2>
+                <p>Read the guides to CSS Grid and Flexbox to learn more about their layout models.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout">CSS Grid guide ↗</a><br>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout">Flexbox guide ↗</a>
+            </section>
+        </aside>
+    </main>
+
+    <footer id="contact">
+        <p>Contact: <a href="mailto:hello@fieldnotes.example">hello@fieldnotes.example</a></p>
+        <p>&copy; 2026 Fieldnotes. Flexbox and Grid assignment.</p>
+    </footer>
+</body>
+</html>
