@@ -1,7 +1,8 @@
 /* Use border-box sizing so padding and borders are included in element widths. */
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font:16px/1.7 Arial,sans-serif;background:#f4f7fb;color:#203149}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;font:16px/1.7 Arial,sans-serif;background:#f4f7fb;color:#203149}
+main{flex:1}
 .site-header{position:fixed;z-index:10;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:14px 7%;background:rgba(255,255,255,.94);border-bottom:1px solid #e2e8f0;backdrop-filter:blur(10px)}
 .brand{font-size:1.5rem;font-weight:900;letter-spacing:-.04em;color:#203149;text-decoration:none}.brand span{color:#4775c8}
 .site-header nav{display:flex;gap:1.4rem}.site-header nav a{font-size:.95rem;font-weight:700;color:#596b83;text-decoration:none;transition:color .2s}.site-header nav a:hover{color:#3a65b5}
