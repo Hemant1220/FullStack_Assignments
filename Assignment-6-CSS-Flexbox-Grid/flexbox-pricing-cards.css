@@ -1,0 +1,12 @@
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;font:16px/1.65 Arial,sans-serif;background:#f4f7fb;color:#223148}
+.page-header{text-align:center;padding:3rem 1rem 2rem}.eyebrow{color:#5268b8;font-size:.77rem;font-weight:900;letter-spacing:.18em}.page-header h1{font-size:clamp(2.2rem,4.5vw,3.4rem);margin:.5rem 0}.page-header>p:last-child{color:#6b788d}
+main{flex:1}.pricing{display:flex;align-items:stretch;justify-content:center;gap:1.2rem;max-width:1150px;margin:1rem auto;padding:1rem 1.5rem 2rem}
+.price-card{position:relative;display:flex;flex:1;flex-direction:column;min-width:0;padding:1.5rem;background:#fff;border:1px solid #dfe6f0;border-radius:16px;box-shadow:0 9px 24px rgba(29,49,76,.06);animation:fade-up .7s ease both;transition:transform .3s ease,background-color .3s ease,box-shadow .3s ease}.price-card:nth-child(2){animation-delay:.15s}.price-card:nth-child(3){animation-delay:.3s}
+.price-card:hover{transform:translateY(-10px);background:#f9fbff;box-shadow:0 20px 34px rgba(29,49,76,.14)}
+.price-card h2{font-size:1.4rem;margin:.25rem 0}.description{min-height:3.2em;color:#65758a}.price{display:flex;align-items:baseline;gap:.4rem;padding:.8rem 0;border-bottom:1px solid #e5eaf2}.price strong{font-size:2.3rem;letter-spacing:-.04em}.price span{font-size:.85rem;color:#78859a}.price-card ul{flex:1;padding-left:1.2rem;color:#56677e}.price-card li{margin:.6rem 0}.price-card>a{display:block;margin-top:1rem;padding:.85rem .7rem;text-align:center;text-decoration:none;font-weight:800;color:#fff;background:#34569f;border-radius:8px;transition:background .2s}.price-card>a:hover{background:#233f7e}.price-card>a:focus-visible{outline:3px solid #e3b457;outline-offset:3px}
+.featured{flex:1.08;border:2px solid #687bc8;background:#edf1ff;padding:calc(1.5rem - 1px)}.featured:hover{background:#e5ebff}.popular{align-self:flex-start;padding:.25rem .5rem;border-radius:4px;background:#34569f;color:white;font-size:.66rem;font-weight:900;letter-spacing:.1em}
+.note{text-align:center;margin:0 1rem 1.5rem;color:#7a879b;font-size:.85rem}footer{text-align:center;padding:1.2rem;background:#1f2e46;color:#dbe4f2;font-size:.9rem}
+@keyframes fade-up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:750px){.pricing{flex-direction:column;max-width:520px;align-items:stretch}.price-card,.featured{flex:auto}.description{min-height:0}}
+@media(prefers-reduced-motion:reduce){.price-card{animation:none;transition:none}.price-card:hover{transform:none}}
