@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact-form-page.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#top">Hello Studio</a>
+        <p>We'd love to hear from you.</p>
+    </header>
+
+    <main id="top">
+        <section class="contact-layout">
+            <div class="contact-intro">
+                <p class="eyebrow">LET'S TALK</p>
+                <h1>Have a question or an idea?</h1>
+                <p>Share a few details and let us know what you're thinking. This form demonstrates semantic HTML and CSS focus states.</p>
+                <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
+            </div>
+
+            <form class="contact-form" action="#" method="get">
+                <h2>Send a message</h2>
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your full name" required>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                </div>
+                <div class="field">
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject" type="text" placeholder="What is this about?" required>
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+                </div>
+                <button type="submit">Send message</button>
+                <p class="form-note">Demo form only; no message is sent to a server.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer><p>&copy; 2026 Hello Studio. All rights reserved.</p></footer>
+</body>
+</html>
