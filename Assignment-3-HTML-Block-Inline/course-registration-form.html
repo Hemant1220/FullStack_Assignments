@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+</head>
+<body>
+    <header>
+        <h1>Course Registration</h1>
+        <p>Complete the form fields below to practise HTML form structure.</p>
+    </header>
+
+    <main>
+        <!-- Fieldset and legend group related registration fields. -->
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Student Details</legend>
+                <p>
+                    <label for="student-name">Full Name:</label>
+                    <input type="text" id="student-name" name="student-name" required>
+                </p>
+                <p>
+                    <label for="student-email">Email Address:</label>
+                    <input type="email" id="student-email" name="student-email" required>
+                </p>
+                <p>
+                    <label for="course">Choose a Course:</label>
+                    <select id="course" name="course">
+                        <option value="html" selected>HTML Fundamentals</option>
+                        <option value="css">CSS Basics</option>
+                        <option value="javascript">JavaScript Introduction</option>
+                        <option value="database">Database Fundamentals</option>
+                    </select>
+                </p>
+                <p><button type="submit">Submit Registration</button> <button type="reset">Clear Form</button></p>
+            </fieldset>
+        </form>
+
+        <section>
+            <h2>Available Course Schedules</h2>
+            <table border="1">
+                <thead>
+                    <tr><th scope="col">Day</th><th scope="col">Time</th><th scope="col">Instructor</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Monday</td><td>10:00 AM – 11:00 AM</td><td>Ms. Sharma</td></tr>
+                    <tr><td>Wednesday</td><td>12:00 PM – 1:00 PM</td><td>Mr. Verma</td></tr>
+                    <tr><td>Friday</td><td>2:00 PM – 3:00 PM</td><td>Ms. Khan</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer><p>Course schedules are sample data for this assignment.</p></footer>
+</body>
+</html>
