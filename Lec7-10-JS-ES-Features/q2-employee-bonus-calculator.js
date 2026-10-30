@@ -28,13 +28,7 @@ for (const employee of employees) {
         const bonus = salary * bonusRate;
         const totalSalary = salary + bonus;
 
-        console.log(
-            "Employee: " + employee.name +
-            " | Salary: Rs. " + salary.toFixed(2) +
-            " | Experience: " + years + " years" +
-            " | Bonus: " + (bonusRate * 100).toFixed(0) + "% (Rs. " + bonus.toFixed(2) + ")" +
-            " | Total: Rs. " + totalSalary.toFixed(2)
-        );
+        console.log(`Employee: ${employee.name} | Salary: Rs. ${salary.toFixed(2)} | Experience: ${years} years | Bonus: ${(bonusRate * 100).toFixed(0)}% (Rs. ${bonus.toFixed(2)}) | Total: Rs. ${totalSalary.toFixed(2)}`);
     } catch (error) {
         console.log("Employee record error: " + error.message);
     }
